@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndoLaser - Depilação a Laser e Tratamentos Estéticos</title>
+    <meta name="description"
+        content="Clínica especializada em depilação a laser e estética avançada em São Paulo. Resultados desde a primeira sessão. Agende sua avaliação gratuita.">
+    <meta name="keywords"
+        content="depilação a laser, estética, tratamento corporal, clínica estética São Paulo, EndoLaser">
+    <meta name="author" content="EndoLaser">
+    <!-- Favicon -->
+    <link rel="icon" href="/midia/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="EndoLaser - Depilação a Laser e Estética">
+    <meta property="og:description" content="Tecnologia avançada, conforto e resultados reais em São Paulo.">
+    <meta property="og:image" content="https://seudominio.com/imagens/capa.jpg">
+    <meta property="og:url" content="https://seudominio.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EndoLaser - Depilação e Estética Avançada">
+    <meta name="twitter:description" content="Tecnologia de ponta para sua beleza. Veja os resultados.">
+    <meta name="twitter:image" content="https://seudominio.com/imagens/capa.jpg">
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org (SEO Local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "EndoLaser",
+      "image": "https://seudominio.com/imagens/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Paulista, 1000 - 10º Andar",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01310-100",
+        "addressCountry": "BR"
+      },
+      "telephone": "+55 11 1234-5678",
+      "url": "https://seudominio.com"
+    }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5FBF',
+                        secondary: '#FF6B6B',
+                        dark: '#2D3748',
+                        light: '#F7FAFC',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .treatment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .before-after {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .before-after img {
+            transition: all 0.5s ease;
+        }
+
+        .before-after:hover img {
+            transform: scale(1.05);
+        }
+
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            border-color: #8B5FBF;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-burn text-primary text-3xl mr-2"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-dark">Endo<span class="text-primary">Laser</span></h1>
+            </div>
+
+            <button class="md:hidden text-dark" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#home" class="text-dark hover:text-primary font-medium">Home</a></li>
+                    <li><a href="#treatment" class="text-dark hover:text-primary font-medium">Tratamento</a></li>
+                    <li><a href="#results" class="text-dark hover:text-primary font-medium">Resultados</a></li>
+                    <li><a href="#testimonials" class="text-dark hover:text-primary font-medium">Depoimentos</a></li>
+                    <li><a href="#about" class="text-dark hover:text-primary font-medium">Sobre Nós</a></li>
+                    <li><a href="#faq" class="text-dark hover:text-primary font-medium">FAQ</a></li>
+                    <li><a href="#contact" class="text-dark hover:text-primary font-medium">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white w-full px-4 py-2" id="mobile-menu">
+            <ul class="space-y-2">
+                <li><a href="#home" class="block py-2 text-dark hover:text-primary">Home</a></li>
+                <li><a href="#treatment" class="block py-2 text-dark hover:text-primary">Tratamento</a></li>
+                <li><a href="#results" class="block py-2 text-dark hover:text-primary">Resultados</a></li>
+                <li><a href="#testimonials" class="block py-2 text-dark hover:text-primary">Depoimentos</a></li>
+                <li><a href="#about" class="block py-2 text-dark hover:text-primary">Sobre Nós</a></li>
+                <li><a href="#faq" class="block py-2 text-dark hover:text-primary">FAQ</a></li>
+                <li><a href="#contact" class="block py-2 text-dark hover:text-primary">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Descubra o poder do Endo<span
+                        class="text-primary">Laser</span></h2>
+                <p class="text-xl mb-8">Tratamento revolucionário para depilação definitiva e remodelamento corporal com
+                    resultados visíveis desde a primeira sessão.</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact"
+                        class="bg-primary hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full text-center transition duration-300">
+                        Agende uma avaliação
+                    </a>
+                    <a href="https://wa.me/SEUNUMERO"
+                        class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-center transition duration-300 flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> Fale pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="bg-light py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Benefícios do Endo<span
+                    class="text-primary">Laser</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center treatment-card transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Resultados Rápidos</h3>
+                    <p class="text-gray-600">Visualize melhorias significativas já nas primeiras sessões, com máxima
+                        eficácia e mínimo desconforto.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center treatment-card transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Minimamente Invasivo</h3>
+                    <p class="text-gray-600">Procedimento seguro com recuperação rápida e sem necessidade de cirurgias
+                        complexas.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center treatment-card transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estimulação de Colágeno</h3>
+                    <p class="text-gray-600">Além da depilação, promove rejuvenescimento da pele, deixando-a mais firme
+                        e saudável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Section -->
+    <section id="treatment" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1551601651-bc60f254d532?ixlib=rb-4.0.3"
+                        alt="Endo Laser Treatment" class="rounded-lg shadow-xl w-full">
+                </div>
+
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-dark mb-6">Como funciona o tratamento?</h2>
+                    <p class="text-gray-600 mb-6">O Endo<span class="text-primary font-bold">Laser</span> é uma técnica
+                        avançada que utiliza tecnologia laser de última geração para tratamentos de depilação definitiva
+                        e remodelamento corporal, proporcionando resultados precisos e eficazes.</p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i class="fas fa-check-circle text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Tecnologia de ponta</h4>
+                                <p class="text-gray-600">Utilizamos equipamentos com a mais recente tecnologia para
+                                    garantir segurança e eficácia.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i class="fas fa-check-circle text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Profissionais qualificados</h4>
+                                <p class="text-gray-600">Nossa equipe é altamente treinada e especializada em
+                                    procedimentos a laser.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i class="fas fa-check-circle text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Plano personalizado</h4>
+                                <p class="text-gray-600">Cada tratamento é adaptado às necessidades individuais de cada
+                                    cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/SEUNUMERO"
+                        class="mt-8 inline-block bg-primary hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Saiba mais pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Áreas de Tratamento</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4 class="font-bold">Rosto</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h4 class="font-bold">Axilas</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h4 class="font-bold">Braços</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h4 class="font-bold">Abdômen</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h4 class="font-bold">Pernas</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h4 class="font-bold">Virilha</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-backspace"></i>
+                    </div>
+                    <h4 class="font-bold">Costas</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <h4 class="font-bold">Pés</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fa-solid fa-person-swimming"></i>
+                    </div>
+                    <h4 class="font-bold">Bikini</h4>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-2">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h4 class="font-bold">Sobrancelhas</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Resultados Antes e Depois</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="before-after overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3"
+                        alt="Resultado 1" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h4 class="font-bold text-dark">Axilas</h4>
+                        <p class="text-gray-600 text-sm">95% redução de pelos</p>
+                    </div>
+                </div>
+
+                <div class="before-after overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3"
+                        alt="Resultado 2" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h4 class="font-bold text-dark">Pernas</h4>
+                        <p class="text-gray-600 text-sm">90% redução de pelos</p>
+                    </div>
+                </div>
+
+                <div class="before-after overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551836026-d5bf2e4f7a1d?ixlib=rb-4.0.3"
+                        alt="Resultado 3" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h4 class="font-bold text-dark">Virilha</h4>
+                        <p class="text-gray-600 text-sm">85% redução de pelos</p>
+                    </div>
+                </div>
+
+                <div class="before-after overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3"
+                        alt="Resultado 4" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-50">
+                        <h4 class="font-bold text-dark">Rosto</h4>
+                        <p class="text-gray-600 text-sm">80% redução de pelos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="https://wa.me/SEUNUMERO"
+                    class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> Quero ver mais resultados
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Depoimentos de Nossas Clientes</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-200 w-12 h-12 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ana Silva"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Ana Silva</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Depois de 6 sessões de EndoLasers nas pernas, minha vida mudou! Não
+                        preciso mais me preocupar com depilação e minha pele está incrível. Recomendo muito!"</p>
+                </div>
+
+                <div class="testimonial-card bg-white p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-200 w-12 h-12 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Carla Santos"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Carla Santos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Fiz tratamento nas axilas e o resultado foi incrível! Sem pelos e sem
+                        irritações que tinha com a depilação comum. A equipe é muito profissional e atenciosa."</p>
+                </div>
+
+                <div class="testimonial-card bg-white p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-200 w-12 h-12 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Juliana Oliveira"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Juliana Oliveira</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Estou na minha 4ª sessão para virilha e bikini e já vejo uma diferença
+                        enorme. Mais confiança, menos pelos e a pele mais lisinha. Valeu cada centavo investido!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-dark mb-6">Sobre a Endo<span class="text-primary">Laser</span>
+                    </h2>
+                    <p class="text-gray-600 mb-4">Somos uma clínica especializada em tratamentos estéticos com laser,
+                        com foco em depilação definitiva e remodelamento corporal. Nossa missão é proporcionar aos
+                        nossos clientes resultados eficazes com conforto e segurança.</p>
+                    <p class="text-gray-600 mb-6">Com profissionais altamente qualificados e equipamentos de última
+                        geração, garantimos tratamentos personalizados para atender às necessidades individuais de cada
+                        cliente.</p>
+
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg border-l-4 border-primary">
+                        <p class="text-primary font-medium">"A beleza começa com a confiança e a confiança começa com
+                            você. Deixe a EndoLasers cuidar do resto."</p>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-dark mb-4">Nossos Diferenciais</h3>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-primary mr-3 mt-1">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Equipe Médica Especializada</h4>
+                                    <p class="text-gray-600 text-sm">Profissionais com vasta experiência em
+                                        procedimentos a laser.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="text-primary mr-3 mt-1">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Segurança em Primeiro Lugar</h4>
+                                    <p class="text-gray-600 text-sm">Protocolos rigorosos para garantir sua segurança e
+                                        conforto.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="text-primary mr-3 mt-1">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Tecnologia de Ponta</h4>
+                                    <p class="text-gray-600 text-sm">Equipamentos importados com os mais recentes
+                                        avanços tecnológicos.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="text-primary mr-3 mt-1">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark">Atendimento Personalizado</h4>
+                                    <p class="text-gray-600 text-sm">Plano de tratamento adaptado às necessidades de
+                                        cada cliente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronta para eliminar os pelos indesejados de vez?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Agende agora seu horário e descubra o poder da depilação a laser
+                com nossos especialistas.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+                <a href="https://wa.me/SEUNUMERO"
+                    class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-full transition duration-300 flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Agendar pelo WhatsApp
+                </a>
+                <a href="tel:+551112345678"
+                    class="bg-transparent hover:bg-white hover:text-primary border-2 border-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i> Ligar Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Perguntas Frequentes</h2>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 font-bold flex justify-between items-center focus:outline-none">
+                        <span>O tratamento dói?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-4 pb-4 hidden">
+                        <p class="text-gray-600">A maioria das clientes relata apenas um leve desconforto, semelhante a
+                            um pequeno beliscão. Utilizamos um sistema de resfriamento que minimiza qualquer possível
+                            incômodo durante o procedimento.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 font-bold flex justify-between items-center focus:outline-none">
+                        <span>Quantas sessões são necessárias?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-4 pb-4 hidden">
+                        <p class="text-gray-600">O número de sessões varia conforme a área tratada e características dos
+                            pelos, mas em média são recomendadas entre 6 a 8 sessões com intervalos de 30 a 45 dias.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 font-bold flex justify-between items-center focus:outline-none">
+                        <span>Quanto tempo dura cada sessão?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-4 pb-4 hidden">
+                        <p class="text-gray-600">Depende da área sendo tratada. Axilas podem levar 15 minutos, enquanto
+                            as pernas podem levar até 1 hora. Nossa equipe informará o tempo estimado durante a
+                            avaliação.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 font-bold flex justify-between items-center focus:outline-none">
+                        <span>Existem restrições para o tratamento?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-4 pb-4 hidden">
+                        <p class="text-gray-600">Sim, não recomendamos o tratamento para gestantes, pessoas com
+                            infecções na pele ou com histórico de sensibilidade luminosa. Durante a avaliação
+                            verificaremos seu caso específico.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button
+                        class="faq-question w-full text-left p-4 font-bold flex justify-between items-center focus:outline-none">
+                        <span>Precisa de algum cuidado após as sessões?</span>
+                        <i class="fas fa-plus text-primary transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-4 pb-4 hidden">
+                        <p class="text-gray-600">Recomendamos evitar exposição ao sol, calor intenso (como saunas), e
+                            uso de cremes perfumados nas 48 horas após o procedimento. Forneceremos todas as orientações
+                            necessárias após cada sessão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">Entre em Contato</h2>
+
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-xl font-bold text-dark mb-4">Informações para Contato</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-primary mr-3 text-xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Endereço</h4>
+                                <p class="text-gray-600">Av. Paulista, 1000 - 10º Andar, Bela Vista, São Paulo/SP</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-primary mr-3 text-xl">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Telefone</h4>
+                                <p class="text-gray-600">(11) 1234-5678</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-primary mr-3 text-xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Email</h4>
+                                <p class="text-gray-600">contato@endolaser.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="text-primary mr-3 text-xl">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Horário de Funcionamento</h4>
+                                <p class="text-gray-600">Segunda a Sexta: 8h às 20h<br>Sábado: 9h às 15h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold text-dark mb-4">Siga-nos nas Redes Sociais</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-primary hover:text-purple-700 text-2xl">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-primary hover:text-purple-700 text-2xl">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-primary hover:text-purple-700 text-2xl">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2">
+                    <form class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-dark font-medium mb-2">Seu Nome</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="email" class="block text-dark font-medium mb-2">Seu Email</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="phone" class="block text-dark font-medium mb-2">Seu Telefone</label>
+                            <input type="tel" id="phone"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="message" class="block text-dark font-medium mb-2">Sua Mensagem</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-primary hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.074808918235!2d-46.65543482442659!3d-23.565999661909346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1sen!2sbr!4v1685026321203!5m2!1sen!2sbr"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-burn text-primary text-2xl mr-2"></i>
+                        <h2 class="text-xl font-bold">Endo<span class="text-primary">Laser</span></h2>
+                    </div>
+                    <p class="text-gray-400 mt-2">Sua beleza, nossa paixão.</p>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">&copy; 2023 EndoLasers. Todos os direitos reservados.</p>
+                    <div class="flex justify-center md:justify-end space-x-4 mt-2">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/SEUNUMERO"
+            class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg transition duration-300 animate-bounce">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+
+                // Toggle answer
+                answer.classList.toggle('hidden');
+
+                // Change icon
+                if (answer.classList.contains('hidden')) {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                } else {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                }
+
+                // Close other answers
+                faqQuestions.forEach(q => {
+                    if (q !== question) {
+                        q.nextElementSibling.classList.add('hidden');
+                        q.querySelector('i').classList.remove('fa-minus');
+                        q.querySelector('i').classList.add('fa-plus');
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
