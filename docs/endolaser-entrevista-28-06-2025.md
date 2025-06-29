@@ -1,20 +1,21 @@
+
 ---
 ## Entrevista com o Cliente: Endolaser
 
-### Requerimentos do Projeto
+### Requisitos do Projeto
 
 **O que sei sobre o cliente/negócio:**
 
 * **Nome:** Endolaser
 * **Segmento:** Clínica especializada em depilação a laser.
-* **Informações Adicionais:** Mais detalhes foram obtidos via WhatsApp.
+* **Informações Adicionais:** Mais detalhes foram obtidos no intagram da clinica.
 
 **Objetivos do cliente com o site:**
 
-* Mostrar o tratamento Endolaser (procedimento, benefícios, resultados de antes e depois).
+* Apresentar o tratamento Endolaser (procedimento, benefícios, resultados de antes e depois).
 * Direcionar o cliente para a compra (venda).
-* **Foco principal:** Promover um tratamento específico (Endolaser), com o site focado nele.
-* O cliente gosta do site antigo, mas não tem acesso a ele e deseja focar exclusivamente no Endolaser para o novo projeto.
+* **Foco principal:** Promover um tratamento específico (**Endolaser**), com o site focado exclusivamente nele.
+* O cliente aprecia o site anterior, mas não possui acesso a ele e deseja focar exclusivamente no Endolaser para o novo projeto.
 
 **Métricas de Sucesso:**
 
@@ -24,10 +25,10 @@
 
 **Público-alvo:**
 
-* Mulheres.
-* Idade: 25 a 55 anos.
-* Interesses: Cuidados com o corpo.
-* Idioma: Português do Brasil (pt-BR).
+* **Gênero:** Mulheres.
+* **Idade:** 25 a 55 anos.
+* **Interesses:** Cuidados com o corpo.
+* **Idioma:** Português do Brasil (pt-BR).
 
 **Estrutura do Site (Seções/Páginas Desejadas):**
 
@@ -37,7 +38,7 @@
 * Resultados
 * Serviços
 * Contato
-* FAQ
+* FAQ (Perguntas Frequentes)
 * Design Responsivo (adaptável a diferentes dispositivos).
 * Localização
 
