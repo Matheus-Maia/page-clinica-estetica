@@ -1,9 +1,11 @@
+# O que falta
 
-------------
-Fotos de antes/depois dos procedimentos — para a seção Resultados (hoje está com imgs aleatorias ) 
+## Mídias
 
-fotos de procedimentos sendo realizados — para a seção Procedimentos (hoje está com imgs aleatorias )
+- **Fotos de antes/depois** dos procedimentos — para a seção Resultados (atualmente com imagens genéricas do Unsplash)
+- **Fotos dos procedimentos sendo realizados** — para a seção Tratamentos (atualmente com imagens genéricas do Unsplash)
+- **Foto horizontal do interior da clínica** — para o hero ficar mais impactante (a foto da equipe funciona, mas é vertical)
 
-Foto do interior da clínica — para o hero ficar mais impactante (a foto da equipe funciona mas é vertical) ou algo relativo
+## Funcionalidades
 
-cards de procedimentos kleva para o waats seria interesante ter uma pagiona para cada ? para progagandas direcionadas!
+- **Páginas individuais por procedimento** — cada card de tratamento levaria para uma página própria, ideal para anúncios direcionados (ex: `/endolaser`, `/hidrolipo`) e campanhas no Meta/Google Ads
