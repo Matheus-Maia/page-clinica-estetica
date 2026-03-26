@@ -1,6 +1,6 @@
 ## 🌟 Website Oficial - EndoLaser Clínica de Estética
 
-Este é o repositório do website oficial da **EndoLaser**, uma clínica de estética especializada em depilação a laser com tecnologia de ponta e tratamentos faciais e corporais avançados, localizada em São Paulo.
+Este é o repositório do website oficial da **EndoLaser**, uma clínica de estética especializada em depilação a laser com tecnologia de ponta e tratamentos faciais e corporais avançados, localizada em São José dos Campos.
 
 ---
 
