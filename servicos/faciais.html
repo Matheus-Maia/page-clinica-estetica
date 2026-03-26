@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tratamentos Faciais em SJC e Taubaté — M&D Estética</title>
+  <meta name="description" content="Tratamentos Faciais em São José dos Campos e Taubaté. Protocolos personalizados para rejuvenescimento, luminosidade e saúde da pele. Avaliação gratuita na M&D Estética.">
+  <link rel="canonical" href="https://centrodeestetica-med.com.br/servicos/faciais.html">
+  <meta property="og:title" content="Tratamentos Faciais — M&D Estética">
+  <meta property="og:description" content="Sua pele merece o melhor da ciência. Protocolos personalizados com tecnologia de ponta. Avaliação gratuita.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/x-icon" href="../midia/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config={theme:{extend:{colors:{moss:'#4A5C4E','moss-dark':'#3a4a3d','moss-light':'#6B8C6E',rose:'#D9B8A8','rose-light':'#EDD9CD',gold:'#C4A882',cream:'#FAF6F2',graphite:'#2E2E2E',muted:'#7A7A7A'},fontFamily:{display:['"Playfair Display"','serif'],body:['Inter','sans-serif'],italic:['"Cormorant Garamond"','serif']}}}}
+  </script>
+  <style>
+    *{font-family:'Inter',sans-serif;} html{scroll-behavior:smooth;}
+    .hero-bg{background-image:linear-gradient(135deg,rgba(74,92,78,.88) 0%,rgba(107,140,110,.65) 60%,rgba(196,168,130,.4) 100%),url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=1400&q=80');background-size:cover;background-position:center 30%;}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;} .reveal.visible{opacity:1;transform:translateY(0);} .reveal-delay-1{transition-delay:.1s;} .reveal-delay-2{transition-delay:.2s;} .reveal-delay-3{transition-delay:.3s;}
+    .nav-scrolled{box-shadow:0 2px 24px rgba(46,46,46,.1);background:rgba(250,246,242,.97);backdrop-filter:blur(8px);}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease;} .faq-answer.open{max-height:300px;} .faq-icon{transition:transform .3s ease;} .faq-icon.rotated{transform:rotate(45deg);}
+    .ornament{display:flex;align-items:center;gap:12px;justify-content:center;} .ornament::before,.ornament::after{content:'';height:1px;width:48px;background:#C4A882;}
+    #mobile-menu{transition:max-height .35s ease,opacity .3s ease;max-height:0;overflow:hidden;opacity:0;} #mobile-menu.open{max-height:400px;opacity:1;}
+    @keyframes pulse-green{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.5);}50%{box-shadow:0 0 0 12px rgba(37,211,102,0);}} .whatsapp-btn{animation:pulse-green 2.5s infinite;}
+    .treatment-card{transition:transform .3s ease,box-shadow .3s ease;} .treatment-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(74,92,78,.12);}
+  </style>
+</head>
+<body class="bg-cream text-graphite font-body antialiased">
+
+  <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-cream/90 backdrop-blur-sm">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="../index.html"><img src="../midia/logo.jpeg" alt="M&D Estética" class="h-14 w-14 object-contain rounded-full" width="56" height="56"></a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="../index.html#servicos"     class="text-sm font-medium text-muted hover:text-moss transition-colors">Tratamentos</a>
+        <a href="../index.html#diferenciais" class="text-sm font-medium text-muted hover:text-moss transition-colors">Sobre Nós</a>
+        <a href="../index.html#resultados"   class="text-sm font-medium text-muted hover:text-moss transition-colors">Resultados</a>
+        <a href="../index.html#unidades"     class="text-sm font-medium text-muted hover:text-moss transition-colors">Unidades</a>
+      </nav>
+      <a href="https://wa.me/5512988505101?text=Quero%20saber%20mais%20sobre%20Tratamentos%20Faciais" target="_blank" rel="noopener noreferrer"
+        class="hidden lg:inline-flex items-center gap-2 bg-moss hover:bg-moss-dark text-cream text-sm font-semibold px-5 py-2.5 rounded-full transition-colors">
+        <i class="fab fa-whatsapp"></i> Agendar avaliação
+      </a>
+      <button id="hamburger" class="lg:hidden text-graphite p-1" aria-label="Menu">
+        <span class="block w-6 h-0.5 bg-graphite mb-1.5" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-graphite mb-1.5" id="bar2"></span>
+        <span class="block w-4 h-0.5 bg-graphite" id="bar3"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="lg:hidden bg-cream border-t border-rose/30 px-6">
+      <nav class="py-4 flex flex-col gap-1">
+        <a href="../index.html#servicos" class="mobile-link py-3 text-sm font-medium text-graphite hover:text-moss border-b border-rose/20">Tratamentos</a>
+        <a href="../index.html#unidades" class="mobile-link py-3 text-sm font-medium text-graphite hover:text-moss border-b border-rose/20">Unidades</a>
+        <a href="https://wa.me/5512988505101?text=Quero%20saber%20mais%20sobre%20Tratamentos%20Faciais" target="_blank" rel="noopener noreferrer"
+          class="mt-3 flex items-center justify-center gap-2 bg-moss text-cream text-sm font-semibold px-5 py-3 rounded-full">
+          <i class="fab fa-whatsapp"></i> Agendar avaliação gratuita
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="pt-24 bg-cream">
+    <div class="container mx-auto px-6 py-4">
+      <nav class="text-xs text-muted flex items-center gap-1.5">
+        <a href="../index.html" class="hover:text-moss">Início</a>
+        <i class="fas fa-chevron-right text-[10px]"></i>
+        <a href="../index.html#servicos" class="hover:text-moss">Tratamentos</a>
+        <i class="fas fa-chevron-right text-[10px]"></i>
+        <span class="text-graphite font-medium">Tratamentos Faciais</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="hero-bg py-28 md:py-36 flex items-center">
+    <div class="container mx-auto px-6">
+      <div class="max-w-2xl">
+        <div class="flex items-center gap-3 mb-5 reveal">
+          <span class="text-gold font-italic italic text-sm">Tratamentos Faciais</span>
+          <div class="h-px w-10 bg-gold"></div>
+        </div>
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-tight mb-6 reveal reveal-delay-1">
+          Sua pele merece<br>
+          <em class="font-display font-normal italic">o melhor da ciência.</em>
+        </h1>
+        <p class="text-cream/80 text-lg leading-relaxed mb-10 max-w-xl reveal reveal-delay-2">
+          Protocolos personalizados para renovar, iluminar e rejuvenescer sua pele. Da limpeza profunda ao laser facial — cada tratamento pensado exclusivamente para você.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 reveal reveal-delay-3">
+          <a href="https://wa.me/5512988505101?text=Quero%20agendar%20avaliação%20de%20Tratamentos%20Faciais" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-2 bg-cream hover:bg-rose-light text-moss font-semibold px-8 py-4 rounded-full transition-all shadow-lg text-sm md:text-base">
+            <i class="fab fa-whatsapp text-lg"></i> Agendar Avaliação Gratuita
+          </a>
+          <a href="#tratamentos" class="inline-flex items-center justify-center gap-2 border-2 border-cream/60 hover:border-cream text-cream font-semibold px-8 py-4 rounded-full transition-all text-sm">
+            Ver tratamentos <i class="fas fa-arrow-down text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white border-b border-rose/20">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="ornament mb-5 reveal"><span class="text-gold text-xs uppercase tracking-widest font-semibold">Nossa Abordagem</span></div>
+        <h2 class="font-display text-3xl font-bold text-graphite mb-5 reveal reveal-delay-1">
+          Cuidado facial<br>
+          <em class="font-display font-normal italic text-moss">com base científica.</em>
+        </h2>
+        <p class="text-muted leading-relaxed reveal reveal-delay-2">
+          Na M&D Estética, não existe protocolo padrão. Cada paciente começa com uma avaliação completa da pele — tipo, tônus, manchas, hidratação, linhas de expressão — para receber um plano de cuidado único, combinando as tecnologias mais eficazes para a sua necessidade.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tratamentos" class="py-24 bg-cream">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-14">
+        <div class="ornament mb-4 reveal"><span class="text-gold text-xs uppercase tracking-widest font-semibold">O que Oferecemos</span></div>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-graphite reveal reveal-delay-1">
+          Nossos tratamentos<br>
+          <em class="font-display font-normal italic text-moss">para o seu rosto.</em>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="treatment-card bg-white rounded-2xl p-7 border border-rose/20 shadow-sm reveal">
+          <div class="w-12 h-12 bg-moss/10 rounded-full flex items-center justify-center mb-5"><i class="fas fa-water text-moss text-lg"></i></div>
+          <h3 class="font-semibold text-graphite mb-2">Limpeza de Pele Profunda</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Extração de cravos e impurezas com técnicas manuais e equipamentos. Ideal para controlar oleosidade, poros dilatados e prevenir acne.</p>
+          <a href="https://wa.me/5512988505101?text=Quero%20saber%20sobre%20Limpeza%20de%20Pele" target="_blank" rel="noopener noreferrer" class="text-moss font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Agendar <i class="fas fa-arrow-right text-xs"></i></a>
+        </div>
+
+        <div class="treatment-card bg-white rounded-2xl p-7 border border-rose/20 shadow-sm reveal reveal-delay-1">
+          <div class="w-12 h-12 bg-moss/10 rounded-full flex items-center justify-center mb-5"><i class="fas fa-tint text-moss text-lg"></i></div>
+          <h3 class="font-semibold text-graphite mb-2">Peeling Químico</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Renovação celular com ácidos (glicólico, mandélico, salicílico). Reduz manchas, uniformiza o tom e melhora textura e luminosidade da pele.</p>
+          <a href="https://wa.me/5512988505101?text=Quero%20saber%20sobre%20Peeling%20Químico" target="_blank" rel="noopener noreferrer" class="text-moss font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Agendar <i class="fas fa-arrow-right text-xs"></i></a>
+        </div>
+
+        <div class="treatment-card bg-white rounded-2xl p-7 border border-rose/20 shadow-sm reveal reveal-delay-2">
+          <div class="w-12 h-12 bg-moss/10 rounded-full flex items-center justify-center mb-5"><i class="fas fa-syringe text-moss text-lg"></i></div>
+          <h3 class="font-semibold text-graphite mb-2">Microagulhamento (Dermapen)</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Microlesões controladas que estimulam colágeno e elastina. Excelente para manchas, cicatrizes de acne, poros e rejuvenescimento geral.</p>
+          <a href="https://wa.me/5512988505101?text=Quero%20saber%20sobre%20Microagulhamento" target="_blank" rel="noopener noreferrer" class="text-moss font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Agendar <i class="fas fa-arrow-right text-xs"></i></a>
+        </div>
+
+        <div class="treatment-card bg-white rounded-2xl p-7 border border-rose/20 shadow-sm reveal">
+          <div class="w-12 h-12 bg-moss/10 rounded-full flex items-center justify-center mb-5"><i class="fas fa-bolt text-moss text-lg"></i></div>
+          <h3 class="font-semibold text-graphite mb-2">Radiofrequência Facial</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Calor profundo que estimula colágeno e trata a flacidez. Firmeza imediata, remodelamento progressivo e efeito lifting sem cirurgia.</p>
+          <a href="https://wa.me/5512988505101?text=Quero%20saber%20sobre%20Radiofrequência%20Facial" target="_blank" rel="noopener noreferrer" class="text-moss font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Agendar <i class="fas fa-arrow-right text-xs"></i></a>
+        </div>
+
+        <div class="treatment-card bg-white rounded-2xl p-7 border border-rose/20 shadow-sm reveal reveal-delay-1">
+          <div class="w-12 h-12 bg-moss/10 rounded-full flex items-center justify-center mb-5"><i class="fas fa-sun text-moss text-lg"></i></div>
+          <h3 class="font-semibold text-graphite mb-2">Luz Intensa Pulsada (LIP)</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Tratamento de manchas, rosácea, vasinhos e envelhecimento com luz pulsada de alta precisão. Uniforniza o tom e revitaliza a pele.</p>
+          <a href="https://wa.me/5512988505101?text=Quero%20saber%20sobre%20Luz%20Intensa%20Pulsada" target="_blank" rel="noopener noreferrer" class="text-moss font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Agendar <i class="fas fa-arrow-right text-xs"></i></a>
+        </div>
+
+        <div class="treatment-card bg-white rounded-2xl p-7 border border-rose/20 shadow-sm reveal reveal-delay-2">
+          <div class="w-12 h-12 bg-moss/10 rounded-full flex items-center justify-center mb-5"><i class="fas fa-gem text-moss text-lg"></i></div>
+          <h3 class="font-semibold text-graphite mb-2">Protocolo Vitamina C + Hidratação</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">Infusão de vitamina C e ácido hialurônico com iontoforese. Luminosidade, hidratação intensa e proteção antioxidante para a pele.</p>
+          <a href="https://wa.me/5512988505101?text=Quero%20saber%20sobre%20Protocolo%20Vitamina%20C" target="_blank" rel="noopener noreferrer" class="text-moss font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Agendar <i class="fas fa-arrow-right text-xs"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-moss text-cream">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="ornament justify-start mb-5 reveal">
+            <span class="text-gold text-xs uppercase tracking-widest font-semibold">Diferenciais</span>
+            <div class="h-px w-10 bg-gold"></div>
+          </div>
+          <h2 class="font-display text-3xl md:text-4xl font-bold mb-6 leading-tight reveal reveal-delay-1">
+            Por que cuidar da pele<br>
+            <em class="font-display font-normal italic text-rose">na M&amp;D?</em>
+          </h2>
+          <div class="space-y-5 reveal reveal-delay-2">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-gold text-xs"></i></div>
+              <p class="text-cream/80 text-sm leading-relaxed"><strong class="text-cream">Avaliação dermatológica completa</strong> antes de qualquer protocolo — mapeamos manchas, tipo de pele, histórico e objetivos.</p>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-gold text-xs"></i></div>
+              <p class="text-cream/80 text-sm leading-relaxed"><strong class="text-cream">Combinação de tecnologias</strong> em um único protocolo — potencializamos os resultados com synergy treatment.</p>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-gold text-xs"></i></div>
+              <p class="text-cream/80 text-sm leading-relaxed"><strong class="text-cream">Equipe certificada</strong> em estética avançada, com especialização em pele e laser médico.</p>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-gold text-xs"></i></div>
+              <p class="text-cream/80 text-sm leading-relaxed"><strong class="text-cream">Acompanhamento fotográfico</strong> do resultado — antes, durante e depois para documentar sua evolução.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <blockquote class="bg-moss-light/30 border border-cream/10 rounded-2xl p-8">
+            <p class="font-italic italic text-cream/90 text-xl leading-relaxed mb-4">"A pele saudável é o reflexo de um cuidado personalizado, constante e baseado em ciência — não em modismos."</p>
+            <cite class="text-cream/50 text-sm not-italic">— Dra. Danielle Mattar</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-6 max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="ornament mb-4 reveal"><span class="text-gold text-xs uppercase tracking-widest font-semibold">Dúvidas</span></div>
+        <h2 class="font-display text-3xl font-bold text-graphite reveal reveal-delay-1">Perguntas frequentes</h2>
+      </div>
+      <div class="space-y-3">
+        <div class="faq-item border border-rose/30 rounded-xl overflow-hidden reveal">
+          <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-cream/60 transition-colors">
+            <span class="font-semibold text-graphite pr-4">Com que frequência devo fazer tratamentos faciais?</span>
+            <i class="faq-icon fas fa-plus text-moss flex-shrink-0"></i>
+          </button>
+          <div class="faq-answer px-6 text-muted text-sm leading-relaxed">
+            <p class="pb-5">Depende do tratamento. Limpeza de pele: a cada 30 a 45 dias. Peeling: a cada 15 a 21 dias no início, depois mensal. Microagulhamento: a cada 30 a 45 dias. Radiofrequência: semanal ou quinzenal. Definimos o protocolo completo na avaliação.</p>
+          </div>
+        </div>
+        <div class="faq-item border border-rose/30 rounded-xl overflow-hidden reveal reveal-delay-1">
+          <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-cream/60 transition-colors">
+            <span class="font-semibold text-graphite pr-4">Posso fazer tratamento facial estando grávida?</span>
+            <i class="faq-icon fas fa-plus text-moss flex-shrink-0"></i>
+          </button>
+          <div class="faq-answer px-6 text-muted text-sm leading-relaxed">
+            <p class="pb-5">Alguns tratamentos são contraindicados na gestação (peelings com ácidos, microagulhamento, LIP). Outros, como limpeza suave e hidratação, podem ser realizados com cuidado. Sempre informe sobre a gestação na avaliação para que adaptemos o protocolo com segurança.</p>
+          </div>
+        </div>
+        <div class="faq-item border border-rose/30 rounded-xl overflow-hidden reveal reveal-delay-2">
+          <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-cream/60 transition-colors">
+            <span class="font-semibold text-graphite pr-4">Tenho pele sensível, posso fazer tratamentos?</span>
+            <i class="faq-icon fas fa-plus text-moss flex-shrink-0"></i>
+          </button>
+          <div class="faq-answer px-6 text-muted text-sm leading-relaxed">
+            <p class="pb-5">Sim. Pele sensível precisa de cuidado especialmente personalizado. Adaptamos os ativos, as concentrações e as tecnologias para respeitar sua pele — há opções suaves e eficazes para todos os tipos de pele, incluindo as mais reativas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-moss text-cream">
+    <div class="container mx-auto px-6 text-center">
+      <div class="ornament mb-5 reveal"><span class="text-gold text-xs uppercase tracking-widest font-semibold">Próximo Passo</span></div>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-5 reveal reveal-delay-1">
+        Sua pele merece<br>
+        <em class="font-display font-normal italic text-rose">um cuidado à altura.</em>
+      </h2>
+      <p class="text-cream/70 max-w-xl mx-auto mb-10 reveal reveal-delay-2">Agende sua avaliação gratuita. Nossa especialista analisa sua pele e monta o protocolo personalizado para os seus objetivos.</p>
+      <a href="https://wa.me/5512988505101?text=Quero%20agendar%20avaliação%20de%20Tratamentos%20Faciais" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1fb55a] text-white font-semibold px-10 py-4 rounded-full transition-all shadow-lg text-base reveal reveal-delay-3">
+        <i class="fab fa-whatsapp text-xl"></i> Agendar minha avaliação gratuita
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-graphite text-cream/60 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="../midia/logo.jpeg" alt="M&D Estética" class="h-12 w-12 object-contain rounded-full" width="48" height="48">
+            <div><p class="font-display font-semibold text-cream text-lg leading-none">M&amp;D Estética</p><p class="text-xs tracking-widest uppercase mt-0.5">Centro de Estética Avançada</p></div>
+          </div>
+          <p class="text-sm text-cream/50">Onde a ciência encontra o cuidado que você merece.</p>
+          <div class="flex gap-4 mt-5">
+            <a href="https://www.instagram.com/centrodeestetica_med/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-cream/10 hover:bg-moss flex items-center justify-center transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-sm"></i></a>
+            <a href="https://wa.me/5512988505101" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-cream/10 hover:bg-[#25D366] flex items-center justify-center transition-colors" aria-label="WhatsApp"><i class="fab fa-whatsapp text-sm"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-cream font-semibold text-sm uppercase tracking-widest mb-4">Tratamentos</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="depilacao-laser.html" class="hover:text-cream">Depilação a Laser</a></li>
+            <li><a href="endolaser.html" class="hover:text-cream">Endolaser</a></li>
+            <li><a href="hidrolipo.html" class="hover:text-cream">Hidrolipo Não Aspirativa</a></li>
+            <li><a href="criolipolise.html" class="hover:text-cream">Criolipólise</a></li>
+            <li><a href="faciais.html" class="hover:text-cream text-gold">Tratamentos Faciais</a></li>
+            <li><a href="harmonizacao.html" class="hover:text-cream">Preenchimento &amp; Botox</a></li>
+            <li><a href="seca-barriga.html" class="hover:text-cream">Seca Barriga</a></li>
+            <li><a href="co2-laser.html" class="hover:text-cream">CO₂ &amp; Laser Fracionado</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-cream font-semibold text-sm uppercase tracking-widest mb-4">Contato</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-[#25D366]"></i><a href="https://wa.me/5512988505101" target="_blank" rel="noopener noreferrer" class="hover:text-cream">(12) 9 8850-5101</a></li>
+            <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-gold"></i><span>SJC &amp; Taubaté — SP</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream/30">
+        <p>&copy; 2025 M&amp;D Estética. Todos os direitos reservados.</p>
+        <a href="../index.html" class="hover:text-cream/60">← Voltar ao site</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5512988505101?text=Quero%20saber%20mais%20sobre%20Tratamentos%20Faciais" target="_blank" rel="noopener noreferrer"
+    class="whatsapp-btn fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#1fb55a] text-white rounded-full flex items-center justify-center text-2xl shadow-xl transition-transform hover:scale-110" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const header=document.getElementById('header');
+    window.addEventListener('scroll',()=>header.classList.toggle('nav-scrolled',window.scrollY>60));
+    const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobile-menu'),bar1=document.getElementById('bar1'),bar2=document.getElementById('bar2'),bar3=document.getElementById('bar3');
+    let menuOpen=false;
+    hamburger.addEventListener('click',()=>{menuOpen=!menuOpen;mobileMenu.classList.toggle('open',menuOpen);bar1.style.transform=menuOpen?'translateY(8px) rotate(45deg)':'';bar2.style.opacity=menuOpen?'0':'1';bar3.style.transform=menuOpen?'translateY(-8px) rotate(-45deg)':'';bar3.style.width=menuOpen?'24px':'';});
+    document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>{menuOpen=false;mobileMenu.classList.remove('open');bar1.style.transform=bar2.style.opacity=bar3.style.transform='';bar3.style.width='';}));
+    document.querySelectorAll('.faq-btn').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.parentElement,answer=item.querySelector('.faq-answer'),icon=btn.querySelector('.faq-icon'),isOpen=answer.classList.contains('open');document.querySelectorAll('.faq-answer').forEach(a=>a.classList.remove('open'));document.querySelectorAll('.faq-icon').forEach(i=>i.classList.remove('rotated'));if(!isOpen){answer.classList.add('open');icon.classList.add('rotated');}}));
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
