@@ -30,20 +30,3 @@ O objetivo deste website é apresentar os serviços da EndoLaser, destacar nosso
 * **GitHub Pages:** Hospedagem do site.
 
 ---
-## 📁 Documentação
-
-[Documentação](docs/Docs.md)
-
-## 📄 Licença
-
-[MIT License](LICENSE) 
-
----
-
-## 📞 Contato
-
-Para dúvidas ou informações, entre em contato com a EndoLaser:
-
-* **Website:** [https://seusite.com.br](https://seusite.com.br) (Mude para a URL do seu GitHub Pages ou domínio personalizado)
-* **WhatsApp:** [+55 11 98765-4321](https://wa.me/5511987654321)
-* **Email:** contato@endolaser.com.br
